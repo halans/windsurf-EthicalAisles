@@ -292,7 +292,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero hero-yellow">
         <div className="hero-content" style={{width: '100%'}}>
           <h1 className="hero-title">Look beyond labels</h1>
           <p className="hero-desc">This isn’t a boycott—it’s a buy-better movement. Learn which American supermarket products to avoid and discover high-quality local options instead.</p>
@@ -300,6 +300,7 @@ function App() {
       </section>
 
       {/* Main Grid Section */}
+
       <main className="main-grid" id="products">
         {products.map((product, idx) => (
           <section className="tile tile-product" key={product.name}>
@@ -307,7 +308,7 @@ function App() {
             <p className="brand-desc">{product.description}</p>
             <ul className="alt-list">
               {product.alternatives.map((alt) => (
-                <li className="alt-item" key={alt}>{alt}</li>
+                <li className="alt-item alt-pill" key={alt}>{alt}</li>
               ))}
             </ul>
           </section>

@@ -53,6 +53,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  position: relative;
   background: #fff;
   border-radius: 0 0 32px 32px;
   box-shadow: 0 6px 0 #0f0f0f;
@@ -62,6 +63,155 @@ body {
   border: 4px solid #0f0f0f;
   border-top: none;
 }
+.hero-yellow {
+  background: #fffae0;
+  border-radius: 0 0 32px 32px;
+  border: 4px solid #0f0f0f;
+  border-top: none;
+  box-shadow: 0 6px 0 #0f0f0f;
+  position: relative;
+}
+
+.sticker {
+  position: absolute;
+  z-index: 2;
+  filter: drop-shadow(2px 3px 0 #0f0f0f);
+  pointer-events: none;
+}
+.sticker-sun {
+  top: 18px;
+  right: 70px;
+  width: 120px;
+  height: 120px;
+}
+.sticker-flower {
+  top: 120px;
+  left: 40px;
+  width: 90px;
+  height: 90px;
+}
+.sticker-heartglasses {
+  top: 60px;
+  right: 220px;
+  width: 100px;
+  height: 50px;
+}
+.sticker-star {
+  bottom: 60px;
+  left: 90px;
+  width: 70px;
+  height: 70px;
+}
+.sticker-lightning {
+  left: -32px;
+  top: 420px;
+  width: 50px;
+  height: 50px;
+}
+/* Footer stickers */
+.sticker-footer-mushroom {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 80px;
+  height: 70px;
+  z-index: 1;
+}
+.sticker-footer-cherry {
+  position: absolute;
+  left: 120px;
+  bottom: 0px;
+  width: 60px;
+  height: 50px;
+  z-index: 1;
+}
+.sticker-footer-star {
+  position: absolute;
+  right: 120px;
+  bottom: 18px;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+.sticker-footer-heart {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  width: 54px;
+  height: 48px;
+  z-index: 1;
+}
+.footer {
+  position: relative;
+  overflow: visible;
+}
+
+@media (max-width: 900px) {
+  .sticker-sun {
+    top: 8px;
+    right: 16px;
+    width: 60px;
+    height: 60px;
+  }
+  .sticker-flower {
+    top: 60px;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+  }
+  .sticker-heartglasses {
+    top: 24px;
+    right: 60px;
+    width: 48px;
+    height: 24px;
+  }
+  .sticker-star {
+    bottom: 18px;
+    left: 18px;
+    width: 32px;
+    height: 32px;
+  }
+  .sticker-lightning {
+    left: -18px;
+    top: 340px;
+    width: 28px;
+    height: 28px;
+  }
+  .sticker-footer-mushroom {
+    left: 2px;
+    bottom: 2px;
+    width: 38px;
+    height: 34px;
+  }
+  .sticker-footer-cherry {
+    left: 60px;
+    bottom: 0px;
+    width: 32px;
+    height: 28px;
+  }
+  .sticker-footer-star {
+    right: 60px;
+    bottom: 8px;
+    width: 28px;
+    height: 28px;
+  }
+  .sticker-footer-heart {
+    right: 8px;
+    bottom: 2px;
+    width: 28px;
+    height: 24px;
+  }
+}
+
+.hero-squiggle {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  width: 260px;
+  height: 80px;
+  pointer-events: none;
+}
+
 .hero-content {
   width: 100%;
   display: flex;
@@ -186,8 +336,20 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.alt-pill {
+  background: #E8431E;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 2rem;
+  padding: 0.65rem 1.3rem;
+  font-size: 1.08rem;
+  margin-bottom: 0.3rem;
+  display: inline-block;
+  box-shadow: 2px 2px 0 #0f0f0f;
+  letter-spacing: 0.01em;
 }
 .alt-item {
   background: #ffde59;
